@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 10,
+  "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "postUpdateOptions": ["pnpmDedupe"]
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["dependencies", "major"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackageNames": ["!react", "!next", "!eslint", "!@nestjs/*"],
+      "automerge": true
+    }
+  ],
+  "vulnerabilityAlerts": { "enabled": true }
+}
+
