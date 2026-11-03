@@ -29,7 +29,7 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.5.23",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.4.2"
+    "vite": "^6.4.5"
   },
   "pnpm": {
     "overrides": {
@@ -40,7 +40,7 @@
       "lodash": ">=4.17.23",
       "jws": ">=4.0.1",
       "minimatch": ">=9.0.7",
-      "vite": "^6.4.2",
+      "vite": "^6.4.5",
       "rollup": ">=4.59.0",
       "glob": ">=10.5.0",
       "js-yaml": ">=4.1.1",
